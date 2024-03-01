@@ -8,6 +8,8 @@ router.use(cors());
 
 router.use(express.json());
 
+router.options('*', cors());
+
 //get all students
 router.get('/', async (req, res) => {
   try {
