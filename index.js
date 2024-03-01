@@ -11,7 +11,7 @@ app.options('*', cors());
 
 // Connect to MongoDB
 mongoose
-  .connect(process.env.MONGODB_URI || 'mongodb://localhost/students')
+  .connect(process.env.MONGODB_URI || 'mongodb://0.0.0.0:27017/Pedro-database' || 'mongodb://localhost/students')
   .then(() => {
     console.log('Connected to Database...');
   })
