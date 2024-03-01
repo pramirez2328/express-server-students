@@ -26,7 +26,7 @@ app.use((req, res, next) => {
 });
 
 // Use the PORT environment variable provided by Render
-const port = process.env.PORT || 8080;
-app.listen(port, () => {
-  console.log(`Students app listening at http://localhost:${port}`);
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, () => {
+  console.log(`Students app listening at http://localhost:${PORT}`);
 });
