@@ -72,7 +72,7 @@ router.delete('/:id', getStudent, async (req, res) => {
     if (!deletedStudent) {
       return res.status(404).json({ message: 'Student not found' });
     }
-    res.json({ message: 'Student deleted' });
+    res.json(deletedStudent);
   } catch (error) {
     res.status(500).json({ message: error.message });
   }
